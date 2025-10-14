@@ -19,7 +19,12 @@
     { href: "technical_architecture.html",      title: "Technology Architecture", group: "technology" },
     { href: "integration_with_platforms.html",  title: "Integration w/ Platforms",group: "technology" },
     { href: "governance_security_compliance.html", title: "Governance & Security", group: "assurance" },
-    { href: "performance_measurement.html",     title: "Performance & KPIs",      group: "assurance" }
+    { href: "performance_measurement.html",     title: "Performance & KPIs",      group: "assurance" },
+    { href: "change_management.html",              title: "Change Management",          group: "strategy" },
+    { href: "innovation_future_technologies.html", title: "Innovation & Future Tech",   group: "technology" },
+    { href: "risk_mitigation.html",                title: "Risk & Mitigation",          group: "strategy" },
+    { href: "sustainability_financial_planning.html", title: "Sustainability & Finance", group: "finance" }
+
   ];
 
   // Optional blurbs (used under “Related sections” titles)
