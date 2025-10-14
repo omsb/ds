@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision &amp; Strategic Goals — OMSB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --color-primary-navy:#003366; --color-accent-teal:#006A6A; --color-accent-gold:#C8A232; --color-text:#1f2937; }
+    html { font-family:'Inter',sans-serif; scroll-behavior:smooth; }
+    .content-card { max-width: 1400px; }
+    .hide-scrollbar::-webkit-scrollbar { display:none; } .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+    .cta-button-teal { transition:all .2s ease-in-out; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+    .cta-button-teal:hover { box-shadow:0 10px 15px rgba(0,0,0,.2); transform:translateY(-2px); background-color:#005555; }
+    .data-table th, .data-table td { padding: 12px 16px; border: 1px solid #e5e7eb; }
+    .data-table th { background-color: var(--color-primary-navy); color: white; text-align: left; }
+    .data-table tr:nth-child(even) { background-color: #f9f9f9; }
+    .challenge-card { transition: all 0.3s; }
+    .challenge-card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  </style>
+  <!-- Add this single line right here -->
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'om-navy':'var(--color-primary-navy)','om-teal':'var(--color-accent-teal)','om-gold':'var(--color-accent-gold)'}}} };
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+<div class="content-card mx-auto bg-white shadow-2xl min-h-screen rounded-2xl overflow-hidden">
+
+<!-- ===== GLOBAL HEADER (do not remove) ===== -->
+<header class="bg-om-navy text-white p-6 sm:p-10 text-center shadow-xl">
+  <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">OMSB Digital Transformation</h1>
+  <p class="max-w-3xl mx-auto mt-2 text-base sm:text-lg text-gray-200">Strategic Vision and Mission</p>
+
+  <!-- Global nav pills (compact, horizontally scrollable on mobile) -->
+  <nav aria-label="Primary" class="mt-5">
+    <div class="hide-scrollbar overflow-x-auto px-3 sm:px-4">
+      <ul class="flex justify-center gap-1.5 sm:gap-2 whitespace-nowrap">
+        <!-- Use exactly these filenames/labels (no edits needed) -->
+        <li><a href="index.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Home</a></li>
+        <li><a href="executive_summary.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Executive Summary</a></li>
+        <li><a href="foundational_pillars.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Foundational Pillars</a></li>
+        <li><a href="vision_goals.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Vision &amp; Goals</a></li>
+        <li><a href="implementation_roadmap.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Implementation Roadmap</a></li>
+        <li><a href="financial_profile.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Financial Profile</a></li>
+        <li><a href="technical_architecture.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Technology Architecture</a></li>
+        <li><a href="integration_with_platforms.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Integration w/ Platforms</a></li>
+        <li><a href="governance_security_compliance.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Governance &amp; Security</a></li>
+        <li><a href="performance_measurement.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Performance &amp; KPIs</a></li>
+        <li><a href="change_management.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Change Management</a></li>
+        <li><a href="innovation_future_technologies.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Innovation &amp; Future Tech</a></li>
+        <li><a href="risk_mitigation.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Risk &amp; Mitigation</a></li>
+        <li><a href="sustainability_financial_planning.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Sustainability &amp; Finance</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- ===== PAGE CONTENT (you can safely edit inside this block) ===== -->
+  <main class="p-6 sm:p-10 lg:p-14">
+    <!-- ===== START: Page-specific content below ===== -->
+
+    <!-- Strategic Vision and Mission -->
+    <section class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-om-navy mb-5 border-b-4 border-om-teal pb-2">Strategic Vision and Mission</h2>
+
+      <!-- Vision Box -->
+      <div class="bg-om-teal/10 p-6 sm:p-8 rounded-xl border-t-8 border-om-teal shadow-lg mb-8">
+        <h3 class="text-2xl font-bold text-om-teal mb-3 flex items-center">
+          <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+          Vision
+        </h3>
+        <p class="text-lg text-gray-800 font-medium">
+          By 2036, the Oman Medical Specialty Board will be the **leading digitally integrated authority** for postgraduate medical training, assessment, accreditation, and credentialing in the Gulf region – delivering seamless, **data-driven**, secure, and **user-centric services** that elevate educational quality, operational efficiency, and workforce readiness for Oman’s healthcare system.
+        </p>
+        <p class="mt-4 text-base text-gray-700 italic">
+          In essence, OMSB envisions a future where every interaction – from resident application to specialist certification – is streamlined through intuitive digital platforms, underpinned by real-time data exchange and intelligent automation. This digital vision directly supports OMSB’s core mandate of producing world-class medical specialists and upholds **Oman Vision 2040’s** call for technologically advanced education and health institutions.
+        </p>
+      </div>
+
+      <!-- Mission Section -->
+      <div class="p-6 sm:p-8 rounded-xl border-l-8 border-om-navy shadow-lg bg-gray-50">
+        <h3 class="text-2xl font-bold text-om-navy mb-3 flex items-center">
+          <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.664 5.176-1.374 9-6.073 9-11.664a12.02 12.02 0 00-.382-3.016z"></path></svg>
+          Mission
+        </h3>
+        <p class="text-base text-gray-700">
+          Leverage **secure, scalable cloud-native platforms** and advanced technologies (AI/ML, blockchain, immersive simulation, interoperability standards) to unify OMSB’s processes and data, drive **evidence-based decision-making**, and foster a culture of continuous innovation, collaboration, and service excellence in postgraduate medical education and regulation.
+        </p>
+        <p class="mt-4 text-base text-gray-600">
+          This digital mission aligns with OMSB’s organizational mission to ensure high-quality medical training and certification. It translates that mission into the digital era by ensuring OMSB’s services are efficient, accessible, and interconnected. The strategy commits to bridging current gaps so that OMSB can fully support Oman’s healthcare workforce development and set an example of digital excellence in governance and education. Ultimately, the mission is to transform OMSB’s operating model such that **digital enablement becomes a core strength** – allowing OMSB to serve stakeholders better, make informed decisions quickly, and adapt to future challenges proactively.
+        </p>
+      </div>
+    </section>
+
+    <!-- Current State Assessment -->
+    <section class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-om-navy mb-5 border-b-4 border-om-teal pb-2">Current State Assessment</h2>
+      <p class="text-lg text-gray-700 mb-8">
+        A candid assessment of OMSB’s current digital state reveals a mix of progress and pressing challenges. While important groundwork has been laid in recent years, several pain points hinder OMSB’s ability to deliver seamless digital services today. The key findings are:
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-6">
+
+        <!-- Challenge 1: Fragmented Systems & Data Silos -->
+        <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg challenge-card shadow-md">
+          <h4 class="font-bold text-xl text-red-700 mb-3">Fragmented Systems & Data Silos</h4>
+          <ul class="text-sm text-gray-700 space-y-3 list-disc ml-5">
+            <li>OMSB’s digital ecosystem is **fragmented across multiple standalone systems** that do not communicate effectively. Core workflows (e.g. resident registration, exam management, accreditation) are only partially digitized and require manual handoffs.</li>
+            <li>There is **no single “source of truth”** for data – multiple databases (LMS, CPD, HR, accreditation, etc.) operate in silos with inconsistent data definitions.</li>
+            <li>For example, OMSB **lacks a Master Professional Index** to uniquely identify each trainee across all services. Leadership currently lacks unified dashboards for decision-making.</li>
+            <li>External stakeholders (like employers) **cannot verify OMSB-issued certifications in real time**, reflecting the need for integration and data unity.</li>
+          </ul>
+        </div>
+
+        <!-- Challenge 2: Limited Service Digitization & User Experience Issues -->
+        <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg challenge-card shadow-md">
+          <h4 class="font-bold text-xl text-red-700 mb-3">Limited Service Digitization & User Experience Issues</h4>
+          <ul class="text-sm text-gray-700 space-y-3 list-disc ml-5">
+            <li>Many OMSB services still involve **paper-based or in-person steps**, leading to inefficiencies and user frustration.</li>
+            <li>As of 2024, **0% of credential equivalency verifications are fully automated**, and roughly **35% of workflows** require physical documents or manual processing.</li>
+            <li>Users must juggle **multiple portals and logins** (for residency, CPD, e-library, exams), as there is no single sign-on or unified interface.</li>
+            <li>**Mobile access is minimal** and real-time notifications (e.g. for exam results or upcoming deadlines) are lacking. This disjointed user experience results in lower satisfaction and adoption of digital channels.</li>
+          </ul>
+        </div>
+
+        <!-- Challenge 3: Institutional Readiness Gaps -->
+        <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg challenge-card shadow-md">
+          <h4 class="font-bold text-xl text-red-700 mb-3">Institutional Readiness Gaps</h4>
+          <ul class="text-sm text-gray-700 space-y-3 list-disc ml-5">
+            <li>OMSB’s internal digital maturity is uneven. Clinical educators and some trainees are experimenting with new tools (e.g. ~65% of faculty use AR/VR simulation quarterly), but administrative staff have **limited digital proficiency and change-management experience**.</li>
+            <li>Only about **22% of OMSB’s admin staff** have completed formal digital skills training, and **no structured digital literacy program** exists.</li>
+            <li>Governance structures for IT and data are nascent – there is currently **no dedicated IT governance committee or data governance body**, and digital initiatives are managed in silos.</li>
+            <li>Security policies exist on paper but lack enforcement; for instance, **no centralized Security Operations Center (SOC)** exists and incident response tends to be reactive. These gaps pose operational risks and slow transformation efforts.</li>
+          </ul>
+        </div>
+
+        <!-- Challenge 4: Compliance and Integration Shortfalls -->
+        <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg challenge-card shadow-md">
+          <h4 class="font-bold text-xl text-red-700 mb-3">Compliance and Integration Shortfalls</h4>
+          <ul class="text-sm text-gray-700 space-y-3 list-disc ml-5">
+            <li>In a recent government digital excellence evaluation, OMSB scored **76/100 overall** – respectable, but below the “excellence” benchmark.</li>
+            <li>OMSB scored very low on certain compliance requirements - for example, **0/10 on adopting the National Digital Accessibility Policy** and similarly low on having an official Internet Use Policy.</li>
+            <li>OMSB’s systems are **not yet integrated with key national platforms** such as the Ministry of Health’s **Nabd Al Shifa EHR** or the unified government services portal.</li>
+            <li>This lack of integration limits data sharing and prevents OMSB services from contributing to the “one government” digital ecosystem.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current State Assessment Table -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-bold text-om-navy mb-4 mt-8">Table: Current State Assessment Baseline</h3>
+      <div class="overflow-x-auto rounded-lg shadow-xl border border-gray-200">
+        <table class="w-full data-table border-collapse">
+          <thead>
+            <tr>
+              <th class="w-1/5">Domain</th>
+              <th class="w-2/5">Maturity Level & Key Challenges</th>
+              <th class="w-2/5">2024 Baseline Metrics (where available)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-semibold text-om-navy">People</td>
+              <td>
+                Faculty and clinicians show strong adoption of digital teaching tools (e.g., AR/VR), but administrative staff demonstrate low digital readiness. No structured digital-literacy or change-management framework. Governance bodies for IT/data are absent. Security enforcement is weak; incident response is reactive.
+              </td>
+              <td>
+                <ul class="list-disc ml-5 space-y-1">
+                  <li>~65% of faculty use AR/VR simulation quarterly.</li>
+                  <li>22% of admin staff completed formal digital skills training.</li>
+                  <li>0 dedicated IT or data governance committees.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-om-navy">Processes</td>
+              <td>
+                Key workflows (resident registration, exams, accreditation) remain fragmented and partially manual. No unified workflows; credential equivalency and certification verification are not digitized. User experience fragmented across multiple portals with no single sign-on. Mobile and real-time notifications largely absent.
+              </td>
+              <td>
+                <ul class="list-disc ml-5 space-y-1">
+                  <li>0% of credential equivalency verifications automated.</li>
+                  <li>~35% of workflows still require paper/in-person steps.</li>
+                  <li>Multiple separate portals/logins required.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-om-navy">Technology</td>
+              <td>
+                Digital ecosystem fragmented - LMS, CPD, HR, accreditation systems operate in silos with limited API integration. No single Master Professional Index. Lack of real-time dashboards for leadership or verification access for external stakeholders. No SOC; security policies unenforced.
+              </td>
+              <td>
+                <ul class="list-disc ml-5 space-y-1">
+                  <li>4+ standalone core systems (LMS, CPD, HR, Accreditation).</li>
+                  <li>No Master Professional Index.</li>
+                  <li>0 centralized Security Operations Center (SOC).</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-om-navy">Data</td>
+              <td>
+                Multiple data sources with inconsistent definitions; no single “source of truth.” Siloed databases undermine interoperability and analytics. Lack of real-time integration with national health and government platforms.
+              </td>
+              <td>
+                <ul class="list-disc ml-5 space-y-1">
+                  <li>4 major disconnected databases (LMS, CPD, HR, accreditation).</li>
+                  <li>>50% of data fields inconsistent across systems.</li>
+                  <li>No real-time dashboards for leadership.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-semibold text-om-navy">Governance & Compliance</td>
+              <td>
+                OMSB scored below benchmark in national digital excellence. Weak policy adoption (e.g., 0/10 on accessibility policy). No Internet Use Policy or formal privacy/security enforcement. Limited vendor governance. Systems not integrated with key national platforms (e.g., MoH EHR, national services portal).
+              </td>
+              <td>
+                <ul class="list-disc ml-5 space-y-1">
+                  <li>Government Digital Excellence Score - 76/100 overall.</li>
+                  <li>Compliance score - 68/100.</li>
+                  <li>0/10 on National Digital Accessibility Policy adoption.</li>
+                  <li>0% integration with Nabd Al Shifa EHR & national services portal.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Drivers for Change -->
+    <section class="p-6 bg-om-navy/5 rounded-xl shadow-inner border-t-4 border-om-navy">
+      <h3 class="text-2xl font-bold text-om-navy mb-4">Drivers for Change</h3>
+      <p class="text-lg text-gray-700">
+        The above challenges underscore an urgent need for holistic digital transformation. OMSB must eliminate silos and modernize its services to handle growing trainee volumes and evolving educational needs more efficiently. Stakeholders – especially new generations of doctors – expect quick, online, mobile-friendly services and seamless digital interactions. Externally, the Omani government (led by the Ministry of Transport, Communications & IT) is pushing all agencies to improve digital service maturity, integrate via common platforms, and contribute to **Oman’s Vision 2040** goals of a “distinguished digital level” of public services. OMSB’s transformation is not just about internal efficiency; it is about aligning with this national digital agenda and excelling in the government’s digital transformation framework. In short, transforming now is **imperative** for OMSB to fulfill its mandate of producing world-class specialists in a modern way, to comply with national directives, and to better serve Oman’s healthcare system.
+      </p>
+    </section>
+
+    <!-- Strategic Objectives (New Section) -->
+    <section class="mb-12 mt-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-om-navy mb-5 border-b-4 border-om-teal pb-2">Strategic Objectives (2026–2036)</h2>
+      <p class="text-lg text-gray-700 mb-8">
+        To realize the vision, OMSB has defined clear strategic objectives for the 2026–2036 horizon, each with measurable targets for 2036 and interim milestones. These objectives address the critical gaps identified and align with both OMSB’s mission and national digital excellence indicators. By 2036, OMSB aims to achieve the following strategic objectives and outcomes:
+      </p>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Objective 1: Process Excellence -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            Provide World-Class, Efficient Services
+          </h4>
+          <p class="text-sm text-gray-600 mb-3 font-semibold">(Process Excellence)</p>
+          <p class="text-sm text-gray-700">
+            Streamline and automate all core OMSB processes to deliver faster, high-quality services. **By 2036, the goal is to reduce key service turnaround times by ~60%** (e.g. residency certification and credentialing cycles cut by more than half) and ensure **at least 95% of exam results are published on time**. Every OMSB service should be available through an online channel with minimal manual steps and transparent status tracking for users. Continuous process improvement mechanisms (feedback loops, regular reviews) will be in place to refine services based on performance data and user input.
+          </p>
+        </div>
+
+        <!-- Objective 2: Interoperability -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9c1.62 0 3.19.462 4.545 1.325l.898-1.554M17.5 17.5l4.5 4.5M19 19l2 2"></path></svg>
+            Achieve Full Interoperability
+          </h4>
+          <p class="text-sm text-gray-700">
+            Integrate systems and data across OMSB and beyond. **By 2031, OMSB will implement an API-first architecture** connecting all its internal systems and enabling secure bi-directional data exchange with key external platforms. This means OMSB’s platform will seamlessly link with the Ministry of Health’s **Nabd Al Shifa EHR**, the national unified eGovernment portal, the National Digital Identity/Beneficiary data hub, and other relevant national systems. External bodies (e.g. employers, international boards) will be able to **instantly verify OMSB qualifications** through digital means.
+          </p>
+        </div>
+
+        <!-- Objective 3: Data, Analytics, and AI -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10h16V7a2 2 0 00-2-2H6a2 2 0 00-2 2zM9 14h6m-3-3v6"></path></svg>
+            Leverage Data, Analytics, and AI
+          </h4>
+          <p class="text-sm text-gray-700">
+            Establish OMSB as a truly **data-driven organization**. By 2036, advanced analytics and **AI will be embedded** in operations to enable proactive decisions, such as **predictive analytics for health workforce planning** (forecasting specialist needs) and implementing **“at-risk trainee” early-warning systems** (so support can be given to struggling residents before failures occur). Data dashboards will offer real-time visibility into key performance indicators, allowing leadership to move from reactive reporting to proactive, intelligent operations in line with Oman’s vision for a “smart government.”
+          </p>
+        </div>
+
+        <!-- Objective 4: User Experience -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.75l7.5 7.5-7.5 7.5M12 4.75h-8.25"></path></svg>
+            Deliver Exceptional User Experience
+          </h4>
+          <p class="text-sm text-gray-700">
+            Offer an intuitive, omni-channel digital experience to all OMSB stakeholders. The objective is to achieve **≥90% satisfaction rates** among major user groups (residents/trainees, faculty, healthcare partners) by 2036. OMSB will adopt a **user-centric, mobile-first approach** with all key services accessible via a **unified online portal and dedicated mobile app**, featuring consistent design and **Single Sign-On (SSO)** for all services. Users will receive proactive notifications and have a **secure digital wallet** to store and share their board-issued credentials, licenses, and exam transcripts. The interface will be bilingual and **100% WCAG 2.1 AA compliant** to ensure inclusivity.
+          </p>
+        </div>
+
+        <!-- Objective 5: Governance, Security, and Compliance -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.664 5.176-1.374 9-6.073 9-11.664a12.02 12.02 0 00-.382-3.016z"></path></svg>
+            Ensure Robust Governance, Security, and Compliance
+          </h4>
+          <p class="text-sm text-gray-600 mb-3 font-semibold">Strengthen institutional governance and safeguards for the digital ecosystem.</p>
+          <p class="text-sm text-gray-700">
+            **By 2031, OMSB will achieve ISO 27001 certification** for its information security management system. All government-mandated ICT policies and controls will be implemented and regularly audited – with a target to reach **>95/100 on the Government IT Compliance score**. A formal **Digital Transformation Steering Committee (DTSC)** will oversee the execution of this strategy, and dedicated sub-committees (IT governance, data governance, cybersecurity) will manage ongoing governance. Every new digital system or major update will undergo **Privacy Impact Assessments and security reviews “by design”** before launch. Comprehensive business continuity and disaster recovery plans will be in place and regularly tested.
+          </p>
+        </div>
+
+        <!-- Objective 6: Sustainability and Innovation -->
+        <div class="p-6 rounded-xl border border-om-teal/20 shadow-lg bg-white hover:shadow-xl transition duration-300">
+          <h4 class="font-bold text-xl text-om-teal mb-3 flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            Maintain Sustainability and Foster Innovation
+          </h4>
+          <p class="text-sm text-gray-700">
+            Adopt a **sustainable technology model** and an innovation mindset. OMSB will use modern, **cloud-native microservices architecture** that can scale and adapt. System capacity planning will ensure at least **50% headroom** at all times. Financial and operational sustainability is also key - by 2036, OMSB’s flagship digital platform (**MASAR**) is envisioned to operate under a **self-financing model**, generating revenue or cost-recovery through value-added services or partnerships. The organization will continuously **pilot new tools** (e.g. blockchain for credential verification) and rapidly adopt those that prove value.
+          </p>
+        </div>
+
+      </div>
+
+      <p class="text-lg text-gray-700 mt-8">
+        These strategic objectives directly map to OMSB’s core mission areas (postgraduate training, accreditation, professional certification) and align with the government’s Digital Transformation Excellence framework. Each objective has associated KPIs to be tracked (detailed later) and is supported by specific initiatives under the strategic pillars. Together, they paint a picture of the target state in 2036 - OMSB as a **highly efficient, data-driven, user-centric, secure, and innovative organization** that significantly contributes to Oman’s **Vision 2040** goals in healthcare and education.
+      </p>
+    </section>
+
+    <!-- ===== END: Page-specific content ===== -->
+    <div class="mt-10 grid sm:grid-cols-2 gap-4">
+      <a href="executive_summary.html" class="block text-center border border-om-navy/10 rounded-xl p-4 hover:bg-om-navy hover:text-white transition">Previous: Executive Summary</a>
+      <a href="foundational_pillars.html" class="block text-center border border-om-navy/10 rounded-xl p-4 hover:bg-om-navy hover:text-white transition">Next: Foundational Pillars</a>
+    </div>
+  </main>
+
+  <!-- ===== GLOBAL FOOTER (do not remove) ===== -->
+  <footer class="p-6 text-center text-sm text-gray-500 border-t border-gray-200 bg-gray-50">
+    Digital Transformation Initiative | OMSB | 2026–2035
+  </footer>
+
+</div>
+</body>
+</html>

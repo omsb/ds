@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Governance, Security & Compliance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --color-primary-navy:#003366; --color-accent-teal:#006A6A; --color-accent-gold:#C8A232; --color-text:#1f2937; }
+    html { font-family:'Inter',sans-serif; scroll-behavior:smooth; }
+    .content-card { max-width: 1400px; }
+    .hide-scrollbar::-webkit-scrollbar { display:none; } .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+    .cta-button-teal { transition:all .2s ease-in-out; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+    .cta-button-teal:hover { box-shadow:0 10px 15px rgba(0,0,0,.2); transform:translateY(-2px); background-color:#005555; }
+    /* Icon styling for section headings */
+    .section-icon { stroke: var(--color-accent-teal); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <!-- Add this single line right here -->
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'om-navy':'var(--color-primary-navy)','om-teal':'var(--color-accent-teal)','om-gold':'var(--color-accent-gold)'}}} };
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+<div class="content-card mx-auto bg-white shadow-2xl min-h-screen rounded-2xl overflow-hidden">
+
+
+  <!-- ===== GLOBAL HEADER (do not remove) ===== -->
+<header class="bg-om-navy text-white p-6 sm:p-10 text-center shadow-xl">
+  <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">OMSB Digital Transformation</h1>
+  <p class="max-w-3xl mx-auto mt-2 text-base sm:text-lg text-gray-200">Governance, Security, and Compliance</p>
+
+  <!-- Global nav pills (compact, horizontally scrollable on mobile) -->
+  <nav aria-label="Primary" class="mt-5">
+    <div class="hide-scrollbar overflow-x-auto px-3 sm:px-4">
+      <ul class="flex justify-center gap-1.5 sm:gap-2 whitespace-nowrap">
+        <!-- Use exactly these filenames/labels (no edits needed) -->
+        <li><a href="index.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Home</a></li>
+        <li><a href="executive_summary.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Executive Summary</a></li>
+        <li><a href="foundational_pillars.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Foundational Pillars</a></li>
+        <li><a href="vision_goals.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Vision &amp; Goals</a></li>
+        <li><a href="implementation_roadmap.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Implementation Roadmap</a></li>
+        <li><a href="financial_profile.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Financial Profile</a></li>
+        <li><a href="technical_architecture.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Technology Architecture</a></li>
+        <li><a href="integration_with_platforms.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Integration w/ Platforms</a></li>
+        <li><a href="governance_security_compliance.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Governance &amp; Security</a></li>
+        <li><a href="performance_measurement.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Performance &amp; KPIs</a></li>
+        <li><a href="change_management.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Change Management</a></li>
+        <li><a href="innovation_future_technologies.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Innovation &amp; Future Tech</a></li>
+        <li><a href="risk_mitigation.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Risk &amp; Mitigation</a></li>
+        <li><a href="sustainability_financial_planning.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Sustainability &amp; Finance</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- ===== PAGE CONTENT (you can safely edit inside this block) ===== -->
+  <main class="p-6 sm:p-10 lg:p-14">
+    <!-- ===== START: Replace or add your page-specific content below ===== -->
+
+   <!-- ===== START: Replace or add your page-specific content below ===== -->
+
+<div class="content-card mx-auto">
+  <!-- Top header block (page title + intro) -->
+  <h1 class="text-4xl sm:text-5xl font-extrabold text-om-navy mb-4">Governance, Security, and Compliance</h1>
+  <p class="text-xl text-gray-600 mb-10 border-b pb-4">
+    Robust governance and strong security are the cornerstones of this digital strategy, ensuring that initiatives are well-managed and risks are controlled. OMSB will institute multiple layers of oversight and align all activities with best practices and national regulations.
+  </p>
+
+  <!-- 1) Digital Governance Structure -->
+  <section class="mb-16">
+    <h2 class="text-2xl sm:text-3xl font-bold infographic-section-title mb-8">1. Digital Governance Structure</h2>
+
+    <!-- Tier 1: Steering Committee -->
+    <div class="bg-white p-6 rounded-lg shadow-md mb-12 hierarchy-connector">
+      <div class="flex items-center mb-4">
+        <span class="p-3 mr-3 rounded-full bg-gray-100" style="border: 2px solid var(--color-accent-teal);">
+          <svg class="w-6 h-6 teal-icon" viewBox="0 0 24 24"><path d="M12 2l10 5.5v11L12 22 2 17.5v-11z"/><path d="M12 22v-11"/><path d="M22 7.5l-10 5.5-10-5.5"/><path d="M12 12.5l10 5.5"/><path d="M2 17.5l10-5.5"/></svg>
+        </span>
+        <h3 class="text-2xl font-semibold text-om-navy">Steering Committee (8–10 members)</h3>
+      </div>
+      <p class="mb-4 text-sm font-medium">Chair: <strong class="text-lg" style="color: var(--color-accent-gold);">Her Excellency, the Executive President of OMSB</strong></p>
+      <p class="mb-4"><strong>Purpose:</strong> Set strategic direction, ratify priorities and policies, approve funding, and track KPIs and risk. Reports to the OMSB Board.</p>
+      <div class="p-4 bg-gray-50 rounded-lg">
+        <h4 class="text-base font-semibold mb-2" style="color: var(--color-accent-teal);">Indicative Membership:</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm text-gray-600">
+          <p>· Director of Education & Training</p>
+          <p>· Director of Examinations & Assessment</p>
+          <p>· Director of Accreditation & Quality</p>
+          <p>· Director of Information Technology</p>
+          <p>· Director of Finance & Administration</p>
+          <p>· Director of Human Resources & Organizational Development</p>
+          <p>· Director of Legal/Compliance</p>
+          <p>· Director of Communications & Public Relations</p>
+          <p>· (Ex-officio): CISO and CDO (when relevant)</p>
+        </div>
+        <p class="mt-3 text-xs"><strong>Cadence:</strong> Monthly governance sessions, quarterly Board status, KPI dashboard, and risk register sign-off.</p>
+      </div>
+    </div>
+
+    <!-- Tier 2 & 3 -->
+    <div class="grid md:grid-cols-3 gap-6 mb-12 relative">
+      <div class="hidden md:block absolute w-full h-1/2 top-0" style="border-top: 2px solid var(--color-primary-navy);"></div>
+
+      <div class="hierarchy-box bg-white p-5 rounded-lg shadow-sm hierarchy-level-1 relative z-10 md:mt-6">
+        <h4 class="text-xl font-semibold mb-2" style="color: var(--color-accent-teal);">Program Leadership</h4>
+        <p class="text-sm"><strong>Program Manager (Manager):</strong> Reports directly to the Steering Committee. Accountable for delivering the strategy, benefits realization, budget, schedule, risks, vendor management, and change enablement.</p>
+        <hr class="my-2 border-gray-200">
+        <p class="text-sm"><strong>Assistant Manager:</strong> Reports to the Program Manager; manages day-to-day coordination, PMO routines, issue/action tracking, and dependency management across initiatives.</p>
+      </div>
+
+      <div class="hierarchy-box bg-white p-5 rounded-lg shadow-sm hierarchy-level-1 relative z-10 md:mt-6">
+        <h4 class="text-xl font-semibold mb-2" style="color: var(--color-accent-teal);">Digital Transformation Team</h4>
+        <p class="text-sm">The core delivery team operating under the Program Manager. It comprises: Program Manager (lead), Assistant Manager, Community Manager, and Initiatives & Projects Managers (each owning a defined initiative).</p>
+        <hr class="my-2 border-gray-200">
+        <h5 class="text-sm font-medium text-om-navy">Community Manager — Scope:</h5>
+        <ul class="list-disc list-inside text-xs space-y-1">
+          <li>Own OMSB digital strategy brand, narrative, and style guide.</li>
+          <li>Run stakeholder awareness campaigns and publish service updates.</li>
+          <li>Lead change communications, feedback loops, and report sentiment/uptake metrics.</li>
+        </ul>
+      </div>
+
+      <div class="hierarchy-box bg-white p-5 rounded-lg shadow-sm hierarchy-level-1 relative z-10 md:mt-6">
+        <h4 class="text-xl font-semibold mb-2" style="color: var(--color-accent-teal);">Initiatives & Projects — Scope</h4>
+        <ul class="list-disc list-inside text-sm space-y-1">
+          <li>Each initiative has a Project/Initiative Manager (delivery) and a Business Owner.</li>
+          <li><strong>Standard PMO controls:</strong> scope baselines, RAID logs, earned-value/velocity tracking, and benefits profiles with pre-defined KPIs.</li>
+          <li><strong>Ways of Working:</strong> Weekly DT Team stand-up; bi-weekly initiative reviews; monthly Steering Committee.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Supporting Governance Boards -->
+    <h4 class="text-xl font-semibold mb-4 ml-2 text-om-navy">4) Supporting Governance Boards (Decision Forums)</h4>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-l-2" style="border-color: var(--color-accent-gold);">
+        <p class="font-bold text-base mb-1 text-om-navy">IT Governance & Architecture Board</p>
+        <p class="text-sm font-medium" style="color: var(--color-accent-teal);">Chair: Director of IT (with Enterprise Architect)</p>
+        <p class="text-xs text-gray-500 mt-2">Mandate: Enterprise architecture standards, integration patterns, technology selections, change requests, exception handling.</p>
+      </div>
+
+      <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-l-2" style="border-color: var(--color-accent-gold);">
+        <p class="font-bold text-base mb-1 text-om-navy">Data Governance Committee</p>
+        <p class="text-sm font-medium" style="color: var(--color-accent-teal);">Chair: CDO (or delegated data steward)</p>
+        <p class="text-xs text-gray-500 mt-2">Mandate: Data standards, quality issues, access/classification, open-data decisions, privacy impact assessments.</p>
+      </div>
+
+      <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-l-2" style="border-color: var(--color-accent-gold);">
+        <p class="font-bold text-base mb-1 text-om-navy">Information Security Oversight (CISO Function)</p>
+        <p class="text-sm font-medium" style="color: var(--color-accent-teal);">Lead: CISO</p>
+        <p class="text-xs text-gray-500 mt-2">Mandate: ISMS/ISO 27001 controls, risk assessments, incident response approvals, MFA/privileged access, security by design.</p>
+      </div>
+    </div>
+
+    <!-- Decision Rights & RACI -->
+    <div class="bg-gray-100 p-6 rounded-lg">
+      <h4 class="text-xl font-semibold mb-4 text-om-navy">5) Decision Rights & RACI (Summary)</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Steering Committee:</strong> A/R for strategy, funding, portfolio priorities, major policy approvals, risk appetite.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Business Owners (Directors):</strong> A for business outcomes, process adoption, and operational handover.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Program Manager:</strong> A/R for portfolio delivery, budgets, cross-initiative dependencies, benefit tracking.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">IT Gov & Arch Board:</strong> A/R for architecture standards, integrations, tech exceptions.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Assistant Manager / PMO:</strong> R for plans, reports, RAID, change logs, and cadence management.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Data Gov Committee:</strong> A/R for data standards, quality, and lawful use.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Initiative/Project Managers:</strong> R for scope/schedule/cost/quality at workstream level.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">CISO Function:</strong> A/R for security controls and incidents.</p>
+        <p class="text-sm"><strong class="font-extrabold" style="color: var(--color-accent-teal);">Community Manager:</strong> R for communications, branding, awareness, and feedback channels.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- =================== OMSB ORGANOGRAM (READY FOR MAIN CONTENT) =================== -->
+<section id="omsb-org-v6" class="p-4 md:p-12">
+  <style>
+    /* ---- Scoped helpers (keep your original palette) ---- */
+    #omsb-org-v6 { --navy:#003366; --teal:#006A6A; --gold:#C8A232; --slate:#94A3B8; font-family:'Inter',sans-serif; }
+    #omsb-org-v6 .box{border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,.1);position:relative;z-index:10}
+    #omsb-org-v6 .navy-bg{background:var(--navy);color:#fff}
+    #omsb-org-v6 .teal-bg{background:var(--teal);color:#fff}
+    #omsb-org-v6 .gold-bg{background:var(--gold);color:#000}
+
+    /* Solid reporting lines (with optional arrow) */
+    #omsb-org-v6 .line-authority{position:relative;background:var(--slate)}
+    #omsb-org-v6 .line-authority::after{
+      content:'';position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);
+      width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--slate);z-index:10
+    }
+    #omsb-org-v6 .no-arrow::after{content:none}
+
+    /* Advisory pills */
+    #omsb-org-v6 .advisory-link-pill{border:2.5px dotted var(--slate)}
+
+    /* ===== Branch hub: horizontal line + 3 vertical taps ===== */
+    #omsb-org-v6 .branch-hub{
+      position:relative;max-width:48rem;margin:0 auto;
+      padding-top:2.25rem; /* room for taps */
+    }
+    /* horizontal line (shared) */
+    #omsb-org-v6 .branch-hub::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--slate);z-index:5
+    }
+    /* each branch column gets a vertical drop from the horizontal line */
+    #omsb-org-v6 .branch{
+      position:relative;padding-top:2.25rem;
+      display:flex;flex-direction:column;align-items:center
+    }
+    /* ensure taps touch/overlap the rail a bit */
+    #omsb-org-v6 .branch::before{
+      content:'';position:absolute;top:-10px; /* slight overlap with rail */
+      left:50%;transform:translateX(-50%);
+      width:2px;height:2.35rem;background:var(--slate);z-index:6
+    }
+
+    /* responsive layout for branches */
+    @media (min-width:768px){
+      #omsb-org-v6 .branch-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    }
+    @media (max-width:767px){
+      #omsb-org-v6 .branch-row{display:flex;flex-direction:column;gap:1.25rem}
+    }
+  </style>
+
+  <h1 class="text-4xl font-extrabold text-center mb-10 text-[var(--navy)]">
+    OMSB Digital Governance Organogram
+  </h1>
+
+  <!-- Tier 0: Board -->
+  <div class="flex justify-center">
+    <div class="box navy-bg p-4 w-full max-w-4xl text-center">
+      <p class="text-3xl font-bold">OMSB Board</p>
+    </div>
+  </div>
+
+  <!-- Board → SC connector -->
+  <div class="flex justify-center h-16 relative">
+    <div class="w-1 line-authority"></div>
+  </div>
+
+  <!-- Tier 1: Steering Committee -->
+  <div class="flex justify-center relative">
+    <div class="box navy-bg p-4 w-full max-w-4xl text-center">
+      <p class="text-2xl font-bold mb-1">Steering Committee <span class="text-sm">(8–10 members)</span></p>
+      <p class="text-sm mb-2">Chair: Her Excellency, Executive President of OMSB</p>
+      <p class="text-xs opacity-80">Monthly sessions; ad-hoc decisions; quarterly Board status; portfolio heatmap; KPI dashboard; risk register sign-off.</p>
+    </div>
+    <!-- ex-officio pills -->
+    <div class="absolute -top-6 w-full max-w-4xl flex justify-between px-4">
+      <span class="gold-bg rounded-full px-3 py-1 text-xs shadow-md advisory-link-pill">CISO*</span>
+      <span class="gold-bg rounded-full px-3 py-1 text-xs shadow-md advisory-link-pill">CDO*</span>
+    </div>
+  </div>
+
+  <!-- SC → PM connector -->
+  <div class="flex justify-center h-12 relative">
+    <div class="w-1 line-authority"></div>
+  </div>
+
+  <!-- Tier 2 & side rail -->
+  <div class="flex flex-col md:flex-row justify-center gap-6 mb-12 relative">
+
+    <!-- Left rail: Embedded decision functions -->
+    <div class="md:w-1/5 order-2 md:order-1 flex flex-col items-center md:items-start gap-4 p-4 md:p-0">
+      <h3 class="text-lg font-bold text-[var(--navy)] hidden md:block mb-4">Embedded Decision Functions</h3>
+      <div class="gold-bg px-4 py-2 rounded-full w-full text-center text-sm shadow-md advisory-link-pill">IT Governance & Architecture</div>
+      <div class="gold-bg px-4 py-2 rounded-full w-full text-center text-sm shadow-md advisory-link-pill">Data Governance (CDO/stewards)</div>
+      <div class="gold-bg px-4 py-2 rounded-full w-full text-center text-sm shadow-md advisory-link-pill">Security Oversight (CISO)</div>
+      <p class="text-xs text-[var(--slate)] italic mt-4 hidden md:block">↑ Functional Escalation (Dotted) to Steering Committee</p>
+    </div>
+
+    <!-- Center: PM + Delivery -->
+    <div class="md:w-3/5 order-1 md:order-2 flex flex-col items-center relative">
+      <!-- Program Manager -->
+      <div class="box teal-bg p-4 w-full max-w-sm text-center z-20">
+        <p class="text-xl font-bold">Program Manager</p>
+        <p class="text-md">(OMSB Digital Strategy)</p>
+        <p class="text-xs opacity-80 mt-1">A/R: Strategy delivery, budget, risks, vendor mgmt.</p>
+      </div>
+
+      <!-- DT Team label -->
+      <p class="text-[10px] text-[var(--navy)] font-bold mt-4 mb-4 text-center border-t border-b border-dashed pt-2 pb-2">
+        Digital Transformation Team = Program Manager + Assistant Manager (PMO) + Community Manager + Initiatives & Projects Managers
+      </p>
+
+      <!-- PM vertical drop (to branch hub) -->
+      <div class="flex justify-center w-full relative">
+        <div class="h-8 line-authority w-1 no-arrow z-10"></div>
+      </div>
+
+      <!-- ===== Branch hub: horizontal line + three vertical taps + cards ===== -->
+      <div class="branch-hub w-full">
+        <div class="branch-row">
+          <!-- Assistant Manager -->
+          <div class="branch">
+            <div class="box teal-bg p-3 w-full text-center z-20">
+              <p class="text-md font-bold">Assistant Manager</p>
+              <p class="text-sm">(PMO Lead)</p>
+              <p class="text-xs opacity-80">R: PMO routines, issue/action tracking, reporting.</p>
+            </div>
+          </div>
+
+          <!-- Community Manager -->
+          <div class="branch">
+            <div class="box teal-bg p-3 w-full text-center z-20">
+              <p class="text-md font-bold">Community Manager</p>
+              <p class="text-sm">(Awareness & Branding)</p>
+              <p class="text-xs opacity-80">R: Brand/narrative, change comms, feedback loops.</p>
+            </div>
+          </div>
+
+          <!-- Initiatives & Projects Managers (centered stacked card) -->
+          <div class="branch">
+            <div class="relative w-full p-2 z-20">
+              <!-- centered teal frame -->
+              <div class="absolute inset-1 bg-[var(--teal)] opacity-30 rounded-xl pointer-events-none"></div>
+              <!-- centered green card -->
+              <div class="box teal-bg p-3 text-center relative w-full mx-auto">
+                <p class="text-md font-bold mb-1">Initiatives & Projects Managers (×N)</p>
+                <p class="text-xs opacity-80">R: Scope baselines, RAID logs, earned-value.</p>
+              </div>
+            </div>
+            <div class="mt-4 w-full text-center">
+              <span class="text-[var(--slate)] text-xs advisory-link-pill px-2 py-0.5 rounded-lg">Business Owners (Directors)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== /Branch hub ===== -->
+    </div>
+  </div>
+
+  <!-- Footer / legend -->
+  <div class="bg-gray-100 border-t-4 border-[var(--navy)] p-6 mt-16 rounded-xl shadow-lg">
+    <h2 class="text-2xl font-bold mb-4 text-[var(--navy)]">Operating Model & Decision Rights</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div>
+        <h3 class="text-lg font-bold text-[var(--teal)] mb-2">Decision Rights & RACI Summary</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm text-[var(--navy)]">
+          <li><span class="font-bold">SC: A/R</span> – strategy, funding, major policy approvals.</li>
+          <li><span class="font-bold">PM: A/R</span> – portfolio delivery, budgets, benefit tracking.</li>
+          <li><span class="font-bold">Project Managers: R</span> – scope/schedule/cost/quality at workstream level.</li>
+          <li><span class="font-bold">Business Owners: A</span> – business outcomes, process adoption.</li>
+        </ul>
+        <p class="text-xs text-[var(--teal)] mt-2">ⓘ Stakeholders/impacted departments are C/I per initiative-specific RACI sheets.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-[var(--teal)] mb-2">Cadence & Controls</h3>
+        <ul class="list-disc list-inside space-y-1 text-sm text-[var(--navy)]">
+          <li><span class="font-bold">Cadence:</span> Weekly team stand-up; monthly Steering Committee; quarterly Board review.</li>
+          <li><span class="font-bold">Controls:</span> PMO toolkit; stage gates; privacy/security-by-design; architecture compliance checks.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-[var(--teal)] mb-2">Legend</h3>
+        <div class="space-y-2">
+          <p class="text-sm text-[var(--navy)]"><span class="line-authority inline-block w-8 h-0 border-t-2"></span> Solid Line: Line Authority / Direct Report</p>
+          <p class="text-sm text-[var(--navy)]"><span class="advisory-link-pill inline-block w-8 h-4 rounded-xl border-2"></span> Dotted Border: Advisory / Functional Link (Pill)</p>
+          <p class="text-sm text-[var(--navy)]"><span class="gold-bg inline-block w-4 h-4 rounded-full mr-1"></span> * Ex-officio/functional role</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================== /OMSB ORGANOGRAM =================== -->
+
+
+ 
+  <!-- 2) Foundational Pillars -->
+  <section>
+    <h2 class="text-2xl sm:text-3xl font-bold infographic-section-title mb-8">Foundational Pillars</h2>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Policy & Compliance -->
+      <div class="compliance-card bg-white p-6 rounded-xl shadow-lg">
+        <div class="flex items-center mb-4">
+          <svg class="w-8 h-8 mr-3 teal-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13l-3 3-2.5-2.5"/><path d="M10 18h4"/></svg>
+          <h3 class="text-xl font-bold text-om-navy">Policy Framework & Compliance</h3>
+        </div>
+        <p class="mb-4 text-sm font-semibold text-gray-600">Goal: Near 100% compliance with Government's ICT controls by 2027.</p>
+        <ul class="space-y-3">
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">National Policies (By 2026):</strong> Adopt the National Digital Accessibility Policy and an Internet Usage Policy.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Standards Alignment:</strong> Review/strengthen policies per ISO 27001 and Oman’s national cybersecurity framework.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Required Documentation:</strong> Information Security Governance Framework and ICT BCP/DRP by 2026.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Verification:</strong> Annual IT audits; supports Government Digital Transformation Excellence (40% institutional readiness weight).</li>
+        </ul>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="compliance-card bg-white p-6 rounded-xl shadow-lg">
+        <div class="flex items-center mb-4">
+          <svg class="w-8 h-8 mr-3 teal-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M10 8l4 4l-4 4"/></svg>
+          <h3 class="text-xl font-bold text-om-navy">Cybersecurity Enhancements</h3>
+        </div>
+        <p class="mb-4 text-sm font-semibold text-gray-600">Goal: Achieve ISO 27001 certification by 2028.</p>
+        <ul class="space-y-3">
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">ISMS:</strong> Implement an ISO/IEC 27001 aligned ISMS.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Access Control:</strong> RBAC, least privilege, MFA for admins & sensitive roles.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Data Protection:</strong> Encryption at rest and in transit (TLS everywhere).</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Monitoring & Testing:</strong> Annual VA/PT and a 24/7 SOC capability by 2028.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Incident Readiness:</strong> Dedicated Incident Response Team & drills.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Privacy:</strong> Mandatory PIAs and alignment with evolving data protection regs.</li>
+        </ul>
+      </div>
+
+      <!-- Risk -->
+      <div class="compliance-card bg-white p-6 rounded-xl shadow-lg">
+        <div class="flex items-center mb-4">
+          <svg class="w-8 h-8 mr-3 teal-icon" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <h3 class="text-xl font-bold text-om-navy">Risk Management</h3>
+        </div>
+        <p class="mb-4 text-sm font-semibold text-gray-600">Integrate digital transformation risks into the Enterprise Risk Management (ERM) framework.</p>
+        <ul class="space-y-3">
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Integration:</strong> Project, change, vendor, and cyber risks tracked under ERM.</li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Risk Register:</strong> Likelihood/impact, owners, and mitigations; reviewed every Steering Committee.</li>
+          <li class="compliance-feature text-sm">
+            <strong style="color: var(--color-accent-teal);">Mitigation Examples:</strong>
+            <ul class="list-disc list-inside ml-4 mt-1 text-xs space-y-1">
+              <li><strong>Change Resistance:</strong> Communications, training, end-user involvement.</li>
+              <li><strong>Vendor Risks:</strong> SLAs, code escrow, knowledge transfer, fallback options.</li>
+              <li><strong>Cybersecurity:</strong> Monitoring, firewalls, potential cyber insurance.</li>
+            </ul>
+          </li>
+          <li class="compliance-feature text-sm"><strong style="color: var(--color-accent-teal);">Contingency:</strong> Trigger extra resources and/or timeline adjustments if risks materialize.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Operating Model & Reporting Lines -->
+  <section class="mt-16 bg-gray-50 p-6 rounded-xl border-t-4" style="border-color: var(--color-primary-navy);">
+    <h2 class="text-2xl sm:text-3xl font-bold infographic-section-title mb-6">Operating Model & Reporting Lines</h2>
+    <div class="bg-white p-4 rounded-lg shadow-md">
+      <p class="font-semibold text-lg text-om-navy">OMSB Board</p>
+      <div class="ml-4 pl-4 border-l-2" style="border-color: var(--color-accent-gold);">
+        <p class="font-semibold text-base" style="color: var(--color-accent-teal);">↳ Steering Committee <span class="font-normal text-sm">(Her Excellency, Executive President — Chair)</span></p>
+        <div class="ml-4 pl-4 border-l-2 border-gray-300">
+          <p class="text-sm font-medium mt-2 text-om-navy">↳ Program Manager <span class="text-xs font-normal">(reports directly to Steering Committee)</span></p>
+          <div class="ml-4 pl-4 border-l-2 border-gray-300">
+            <p class="text-xs font-medium mt-1">↳ Assistant Manager</p>
+            <p class="text-xs font-medium mt-1">↳ Digital Transformation Team <span class="font-normal">(Community Manager, Initiatives & Projects Managers)</span></p>
+          </div>
+        </div>
+        <p class="text-sm font-medium mt-2 text-om-navy">↳ Advisory/Approvals:</p>
+        <ul class="list-disc list-inside ml-6 text-sm">
+          <li>IT Governance & Architecture Board</li>
+          <li>Data Governance Committee</li>
+          <li>CISO / Security Oversight</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-6 p-4 bg-gray-200 rounded-lg">
+      <h4 class="text-lg font-semibold mb-2 text-om-navy">Key Ways of Working & Transparency:</h4>
+      <div class="grid sm:grid-cols-2 gap-4 text-sm text-gray-700">
+        <p><strong style="color: var(--color-accent-teal);">Cadence:</strong> Weekly DT Team stand-up; bi-weekly initiative reviews; monthly Steering Committee; quarterly Board review.</p>
+        <p><strong style="color: var(--color-accent-teal);">Controls:</strong> Standard PMO toolkit, stage gates, privacy/security by design, architecture compliance checks.</p>
+        <p><strong style="color: var(--color-accent-teal);">Transparency:</strong> Public roadmap highlights (where appropriate), service dashboards, change calendars.</p>
+        <p><strong style="color: var(--color-accent-teal);">Benefits:</strong> Initiative KPIs (SLAs, satisfaction, adoption) roll up to a benefits dashboard for the Steering Committee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Final Summary -->
+  <section class="mt-12 p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-color: var(--color-accent-gold);">
+    <p class="text-gray-700">
+      In summary, strong governance, rigorous security, and strict compliance are foundational to OMSB’s digital strategy. By setting up the right committees and policies, OMSB creates an environment where digital initiatives can be executed in a controlled, transparent manner. By hardening security and managing risks, OMSB protects its stakeholders and builds confidence in the digital services. These measures not only meet requirements but also instill a culture of accountability and safety, which is essential for sustainable digital transformation.
+    </p>
+  </section>
+</div>
+
+<!-- Keep your two buttons below if you want them on this page -->
+<div class="mt-10 grid sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+  <a href="index.html" class="block text-center border border-om-navy/10 rounded-xl p-4 hover:bg-om-navy hover:text-white transition bg-white shadow-md">Back to Homepage</a>
+  <a href="full-document.html" class="block text-center border border-om-navy/10 rounded-xl p-4 hover:bg-om-navy hover:text-white transition bg-white shadow-md">View Full Strategy</a>
+</div>
+<!-- ===== END: Page-specific content ===== -->
+
+  </main>
+
+  <!-- ===== GLOBAL FOOTER (do not remove) ===== -->
+<footer class="p-6 text-center text-sm text-gray-500 border-t border-gray-200 bg-gray-50">
+  Digital Transformation Initiative | OMSB | 2026–2035
+</footer>
+
+</body>
+</html>

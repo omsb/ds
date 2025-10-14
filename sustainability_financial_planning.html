@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OMSB Digital Transformation — Sustainability and Financial Planning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --color-primary-navy:#003366; --color-accent-teal:#006A6A; --color-accent-gold:#C8A232; --color-text:#1f2937; }
+    html { font-family:'Inter',sans-serif; scroll-behavior:smooth; }
+    .content-card { max-width: 1400px; }
+    .hide-scrollbar::-webkit-scrollbar { display:none; } .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+    /* Reusing integration styles for a consistent look */
+    .integration-icon { stroke: var(--color-accent-teal); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .integration-card { transition: transform 0.2s ease, box-shadow 0.2s ease; border-left: 4px solid var(--color-accent-gold); }
+    .integration-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+    .integration-title { color: var(--color-primary-navy); }
+    .text-sm-faithful { font-size: 0.875rem; }
+  </style>
+  <!-- Add this single line right here -->
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'om-navy':'var(--color-primary-navy)','om-teal':'var(--color-accent-teal)','om-gold':'var(--color-accent-gold)'}}} };
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+<div class="content-card mx-auto bg-white shadow-2xl min-h-screen rounded-2xl overflow-hidden">
+
+<!-- ===== GLOBAL HEADER (do not remove) ===== -->
+<header class="bg-om-navy text-white p-6 sm:p-10 text-center shadow-xl">
+  <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">OMSB Digital Transformation</h1>
+  <p class="max-w-3xl mx-auto mt-2 text-base sm:text-lg text-gray-200">Sustainability and Financial Planning</p>
+
+  <!-- Global nav pills (compact, horizontally scrollable on mobile) -->
+  <nav aria-label="Primary" class="mt-5">
+    <div class="hide-scrollbar overflow-x-auto px-3 sm:px-4">
+      <ul class="flex justify-center gap-1.5 sm:gap-2 whitespace-nowrap">
+        <!-- Use exactly these filenames/labels (no edits needed) -->
+        <li><a href="index.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Home</a></li>
+        <li><a href="executive_summary.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Executive Summary</a></li>
+        <li><a href="foundational_pillars.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Foundational Pillars</a></li>
+        <li><a href="vision_goals.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Vision &amp; Goals</a></li>
+        <li><a href="implementation_roadmap.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Implementation Roadmap</a></li>
+        <li><a href="financial_profile.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Financial Profile</a></li>
+        <li><a href="technical_architecture.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Technology Architecture</a></li>
+        <li><a href="integration_with_platforms.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Integration w/ Platforms</a></li>
+        <li><a href="governance_security_compliance.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Governance &amp; Security</a></li>
+        <li><a href="performance_measurement.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Performance &amp; KPIs</a></li>
+        <li><a href="change_management.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Change Management</a></li>
+        <li><a href="innovation_future_technologies.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Innovation &amp; Future Tech</a></li>
+        <li><a href="risk_mitigation.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Risk &amp; Mitigation</a></li>
+        <li><a href="sustainability_financial_planning.html" class="inline-block rounded-full bg-white/10 hover:bg-white text-white hover:text-om-navy border border-white/20 hover:border-white px-3 py-1.5 text-sm font-semibold transition">Sustainability &amp; Finance</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- ===== PAGE CONTENT (Sustainability and Financial Planning) ===== -->
+  <main class="p-6 sm:p-10 lg:p-12">
+    <h2 class="text-3xl sm:text-5xl font-extrabold text-om-navy text-center mb-6 border-b-4 border-om-navy/10 pb-4">Sustainability and Financial Planning</h2>
+
+    <!-- ============== SUSTAINABILITY & FINANCIAL PLANNING (NO PAGE TITLE) ============== -->
+    <section id="sustainability-infographic" class="p-4 md:p-12">
+      <style>
+        /* Scoped palette & base (consistent with other sections) */
+        #sustainability-infographic{
+          --navy:#003366; --teal:#006A6A; --gold:#C8A232; --green-success:#16A34A;
+          font-family:'Inter',sans-serif; background:#f8fafc;
+        }
+        #sustainability-infographic .themed-box{
+          border-radius:16px; box-shadow:0 10px 15px rgba(0,0,0,.1);
+        }
+        #sustainability-infographic .kpi-icon{
+          stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;
+          fill:none; width:28px; height:28px; min-width:28px;
+        }
+        #sustainability-infographic .plan-row{display:grid; grid-template-columns:1fr 2fr 3fr;}
+        @media (max-width:768px){
+          #sustainability-infographic .plan-row{grid-template-columns:1fr;}
+          #sustainability-infographic .plan-row > div:nth-child(2){padding-top:.5rem; padding-bottom:.5rem;}
+        }
+      </style>
+    
+      <!-- Intro (title removed, paragraph kept) -->
+      <div class="text-center mb-12">
+        <p class="text-xl text-[var(--teal)] font-medium max-w-4xl mx-auto">
+          Ensuring the long-term viability of the Digital Transformation through structured investment, measured returns, and self-financing mechanisms until 2036 and beyond.
+        </p>
+      </div>
+    
+      <!-- Investment Overview Box -->
+      <div class="max-w-7xl mx-auto themed-box p-6 bg-white border-b-4 border-[var(--navy)] mb-12">
+        <h2 class="text-3xl font-bold text-[var(--navy)] mb-4 flex items-center">
+          <svg class="kpi-icon mr-3 text-[var(--navy)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          10-Year Investment Overview (2026–2036)
+        </h2>
+        <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-8">
+          <div class="text-center">
+            <p class="text-5xl font-extrabold text-[var(--teal)]">OMR 22.216 M</p>
+            <p class="text-sm text-gray-600 font-semibold mt-1">Total Estimated Investment</p>
+          </div>
+          <div class="flex-1 w-full md:w-auto">
+            <div class="space-y-2">
+              <div class="flex items-center">
+                <span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full bg-blue-100 text-[var(--navy)]">PHASE 1 (2026–2028)</span>
+                <p class="text-sm text-gray-700">Foundation building, platform acquisition (MASAR), initial cloud/integration.</p>
+              </div>
+              <div class="flex items-center">
+                <span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full bg-yellow-100 text-[var(--gold)]">PHASE 2 (2029–2032)</span>
+                <p class="text-sm text-gray-700">Scaling operations, advanced tech implementation (AI, Analytics, Blockchain).</p>
+              </div>
+              <div class="flex items-center">
+                <span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full bg-green-100 text-[var(--green-success)]">PHASE 3 (2033–2036)</span>
+                <p class="text-sm text-gray-700">Tapering core spend, continuous innovation, system upgrades and pilots.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Core Sustainability Matrix -->
+      <div class="max-w-7xl mx-auto themed-box overflow-hidden bg-white border-t-8 border-[var(--teal)]">
+        <!-- Table Header -->
+        <div class="plan-row text-white font-bold text-lg bg-[var(--teal)]">
+          <div class="p-4 border-b-2 border-white/20 md:border-b-0">PILLAR</div>
+          <div class="p-4 border-b-2 border-white/20 md:border-l md:border-b-0">KEY OBJECTIVE/TARGET</div>
+          <div class="p-4 md:border-l">SUSTAINABILITY STRATEGY</div>
+        </div>
+    
+        <!-- Plan Rows -->
+        <div class="divide-y divide-gray-200 text-[var(--navy)]">
+          <!-- 1. Cost-Benefit and ROI -->
+          <div class="plan-row items-center p-4 bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div class="font-bold flex items-center text-lg text-[var(--navy)]">
+              <svg class="kpi-icon mr-2 text-[var(--navy)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1v22m5-5H7m10-4H7m10-4H7m10-4H7"/></svg>
+              Investment Justification
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              Track and quantify financial and non-financial returns to secure continued funding.
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Quantify <strong>Tangible Savings</strong> (paper, OpEx, avoided CapEx).</li>
+                <li>Measure <strong>Intangible Benefits</strong> (faster service, improved decision quality).</li>
+                <li>Translate efficiency gains (e.g., automated processing) into <strong>Avoided Costs</strong> (staff growth).</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 2. Operational Cost Management -->
+          <div class="plan-row items-center p-4 hover:bg-gray-50 transition-colors">
+            <div class="font-bold flex items-center text-lg text-[var(--gold)]">
+              <svg class="kpi-icon mr-2 text-[var(--gold)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M3 15h18"/><path d="M7 11v2"/></svg>
+              Operational Efficiency
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              Target <strong>cost-per-user efficiency gains of ≥ 20% by 2036</strong>.
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Aggressively <strong>optimize cloud</strong> usage (auto-scaling, reserved instances).</li>
+                <li><strong>Decommission legacy systems</strong> and eliminate associated maintenance costs.</li>
+                <li>Centralize ICT procurement and utilize <strong>shared government services</strong> (GovCloud, ePayment).</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 3. Self-Financing and Revenue -->
+          <div class="plan-row items-center p-4 bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div class="font-bold flex items-center text-lg text-[var(--green-success)]">
+              <svg class="kpi-icon mr-2 text-[var(--green-success)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245 1.179-6.873-5-4.869 6.908-1.004 3.085-6.237 3.085 6.237 6.908 1.004-5 4.869 1.179 6.873z"/></svg>
+              Revenue Generation
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              MASAR/flagship platform should be <strong>self-financing or revenue-generating by 2036</strong>.
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Offer <strong>MASAR as a Service</strong> (white-labeled) to other regional/national entities for a fee.</li>
+                <li>Pursue <strong>joint ventures</strong> or cost-sharing agreements for system development.</li>
+                <li>Charge modest fees for international credential <strong>verification services</strong>.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 4. Long-Term System Sustainability -->
+          <div class="plan-row items-center p-4 hover:bg-gray-50 transition-colors">
+            <div class="font-bold flex items-center text-lg text-[var(--teal)]">
+              <svg class="kpi-icon mr-2 text-[var(--teal)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 16v-4m0-4V8"/></svg>
+              Tech &amp; Process Health
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              Ensure systems remain maintainable, scalable, and avoid technological obsolescence/lock-in.
+            </div>
+            <div class="text-sm border-t md:border-t-0 md:border-l border-gray-200 p-2 md:p-0">
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Adopt <strong>modular architecture</strong> and adhere to <strong>open standards</strong> to ease component replacement.</li>
+                <li>Continuous <strong>IT staff training</strong> (Digital Academy concept) for internal maintenance capacity.</li>
+                <li>Maintain a <strong>rolling 3-year budget plan</strong> aligned with government 5-year plans for foresight.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Conclusion/Summary -->
+      <div class="mt-12 text-center max-w-4xl mx-auto themed-box p-6 bg-[var(--navy)] text-white">
+        <p class="text-lg font-medium"><strong>Enabling Lasting Value</strong></p>
+        <p class="text-sm opacity-90 mt-2">
+          The strategy ensures the transformation is a <strong>permanent evolution</strong>, not a temporary project. By securing multi-year funding, demonstrating clear ROI, and building alternative revenue streams (MASAR commercialization), OMSB reduces reliance on sole government funding and achieves long-term financial and operational excellence, aligning with <strong>Oman Vision 2040</strong> sustainability goals.
+        </p>
+      </div>
+    </section>
+    <!-- ================= /SUSTAINABILITY & FINANCIAL PLANNING ================= -->
+
+    <!-- Introduction Section -->
+    <section class="mb-12 p-6 bg-om-teal/5 rounded-xl shadow-inner border-l-4 border-om-teal">
+      <p class="text-lg leading-relaxed text-gray-700">
+        Implementing and sustaining a decade-long digital transformation requires sound financial planning and a focus on long-term sustainability. OMSB is committed to ensuring that the benefits of digital transformation are not only achieved but also maintained beyond 2036 without imposing undue financial strain on the organization or the government. Key considerations and plans for financial sustainability include:
+      </p>
+    </section>
+
+    <!-- Financial and Sustainability Cards Grid -->
+    <section class="grid gap-8">
+      
+      <!-- 1. Investment Overview -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Wallet (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3"/><path d="M16 8V6a2 2 0 0 0-2-2H5a1 1 0 0 0-1 1v14"/><path d="M9 13a2 2 0 1 0 0-4a2 2 0 0 0 0 4z"/></svg>
+          Investment Overview
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          The total investment for OMSB’s Digital Transformation Program over 2026–2036 is estimated at **OMR 22.216 million**. This budget was carefully derived to cover technology procurement (software licenses, hardware upgrades), cloud services, training and change management programs, staffing needs (including any new hires or consultants for specialized roles), and contingency funds. The funding is planned in alignment with the three phases -
+          <ul class="list-disc pl-5 mt-2 space-y-2">
+            <li>**Foundation Phase (2026–2028)** - A significant portion is front-loaded here to build core systems, integrations, and governance structures. For example, costs in this phase include acquiring the unified digital platform (or developing MASAR to full scale), initial cloud migration expenses, integration setup, and hiring a change management team.</li>
+            <li>**Optimization Phase (2029–2032)** - Budget shifts towards advanced technology implementations (analytics tools, AI solutions, blockchain infrastructure) and scaling operations. This includes upgrades or expansions to handle increased data/users, and costs for achieving certifications (ISO audits, etc.).</li>
+            <li>**Continuous Innovation Phase (2033–2036)** - Investments here focus on innovation initiatives, pilots of new tech, and continuous improvement (like regular system upgrades). By this phase, core investments should taper, with more emphasis on operational budgets for ongoing improvements.</li>
+          </ul>
+          OMSB will work with the Ministry of Finance and other relevant bodies to secure funding through the government budgeting process, potentially categorized under national digital transformation initiatives or specific grants. Breaking the budget into multi-year tranches helps with government 5-year plan alignments and allows adjustments as needed in later years based on earlier phase outcomes.
+        </p>
+      </div>
+
+      <!-- 2. Cost-Benefit and ROI Justification -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Bar Chart (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><path d="M3 3v18h18"/><path d="M18 17V9m-4 8V5m-4 12V13m-4 4v-4"/></svg>
+          Cost-Benefit and ROI Justification
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          To justify and protect this investment, OMSB will actively track and publicize the returns on investment (**ROI**) from digital projects. This includes both tangible savings (e.g. reduced paper and printing costs, reduced administrative man-hours due to automation, lower server maintenance costs after cloud migration) and intangible benefits (faster service delivery leading to more productive health workforce, improved decision-making impacting health outcomes, etc.). For instance, if automating application processing saves 15 staff hours per week, that can be translated into a cost saving over a year. By **2031**, OMSB expects that efficiency gains will allow it to handle increased workload without proportional increases in staff, effectively absorbing growth at lower cost. Such productivity improvements can be quantified (e.g. if OMSB would have needed 5 more staff by 2031 to handle growth but didn’t because of digital efficiencies, that’s an avoided cost of X OMR per year). Similarly, moving to cloud might avoid large capital expenditures on servers; implementing online services could potentially increase revenue in some areas (e.g. if OMSB introduces a nominal fee for an online verification service used by employers). All these will feed into an ROI analysis. Demonstrating positive ROI helps ensure continued funding support and also helps OMSB make decisions on prioritizing projects (focusing on those with high impact).
+        </p>
+      </div>
+
+      <!-- 3. Operational Cost Management -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: CPU (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M8 12h8m-8 0a4 4 0 1 0 0-8a4 4 0 0 0 0 8z"/><path d="M12 8V4m0 16v-4m-4 0H4m16 0h-4"/></svg>
+          Operational Cost Management
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          While initial investments are high, digital transformation should lower certain ongoing costs. OMSB will closely manage operational expenditures (**OpEx**) for its digital services. Cloud usage will be monitored and optimized – e.g. using auto-scaling to only pay for what is needed, cleaning up unused resources, and using cost-effective cloud options (like reserved instances or government special rates). In fact, one of the strategic objectives is to achieve cost-per-user efficiency gains of **$\geq20\%$ by 2036** through cloud optimization and process improvements. Additionally, as systems consolidate, OMSB can retire legacy systems and their maintenance contracts, channeling those funds into the new platform. Centralizing ICT procurement (through the IT governance board) will allow bulk or enterprise licensing deals that are cheaper than fragmented spends. OMSB will also look for opportunities to utilize shared government services to reduce cost (already planned with using GovCloud, ePayment, etc.) – for example, if the government offers a central AI platform or data lake for multiple entities, using that might be more cost-efficient than building separate ones. The financial plan also accounts for inflation and currency risk if foreign services are used, potentially by locking multi-year contracts at fixed rates where possible.
+        </p>
+      </div>
+
+      <!-- 4. Self-Financing and Revenue Generation -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Banknote (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><rect x="3" y="6" width="18" height="12" rx="2" ry="2"/><circle cx="12" cy="12" r="3"/><path d="M18 10h-2m-8 4h-2"/></svg>
+          Self-Financing and Revenue Generation
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          A distinctive part of OMSB’s sustainability approach is to generate revenue from its digital assets by **2030s**. The MASAR platform (or the suite of OMSB digital modules) could be offered as a service to other bodies regionally. For example, perhaps smaller countries in the region or other professional boards (like nursing or allied health in Oman) could use a white-labeled version of OMSB’s e-portfolio or exam system for their own training programs, for a fee. OMSB could enter a joint-venture or partnership to commercialize some of its solutions (the draft mentions a joint-venture model for MASAR). Even if not fully commercial, OMSB can enter cost-sharing arrangements – say, co-developing certain systems with another Gulf country so that costs are split and both benefit. Another revenue avenue is offering verification services internationally – e.g. charging a small fee for processing international credential verification requests (many boards do this). If blockchain credentials become widely recognized, OMSB might charge issuing or subscription fees for premium verification tools (though any fees would be modest and aligned with public service ethos). The strategy clearly states that by **2036** OMSB’s flagship platform should be self-financing or revenue-generating to ensure it doesn’t become a financial burden. Achieving even partial self-financing will make the digital services more sustainable in the long run, insulating them from budget fluctuations.
+        </p>
+      </div>
+      
+      <!-- 5. Budget Governance -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Clipboard List (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 13h6m-6 4h4"/></svg>
+          Budget Governance
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          Financial oversight will be integrated into the transformation governance. The Steering Committee will review budget status in its meetings, track spending vs. budget, and approve major expenditures. A **rolling 3-year budget plan** will be maintained and updated each year to reflect any changes in priorities or cost structures. This rolling plan means in 2026, OMSB will already budget out to 2029 in detail, in 2027 extend to 2030, and so on – giving foresight and flexibility. If certain projects under-run or free up funds, the committee can reallocate to other needs or bring forward some innovations. Conversely, if some costs escalate, having early warning allows adjustments (either securing extra funds or scaling down some scope). OMSB will also align its budgeting with Oman’s government 5-year development plans to ensure synergy and possibly tap into any special funds (for instance, if there’s a national fund for digital innovation or human capital development, OMSB projects could qualify).
+        </p>
+      </div>
+      
+      <!-- 6. Sustainability of Solutions -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Repeat (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><path d="M17 1v4m0 18v-4m-9-3l-4 4l4 4m8-8l4-4l-4-4"/><path d="M7 17H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v2"/></svg>
+          Sustainability of Solutions
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          Beyond finances, sustainability entails that the systems and processes are maintainable and scalable over time. OMSB will mitigate the risk of systems becoming obsolete by adopting modern, widely-supported technologies (cloud, APIs, etc.) and by ensuring **knowledge transfer** to its own staff so it can maintain systems in-house if needed. The architecture’s **modularity** means if one component becomes outdated, it can be replaced without a full redo. The use of **open standards** ensures OMSB isn’t stuck with dead-end technology. The continuous training of IT staff (digital academy concept) ensures OMSB has the human capacity to sustain the digital environment long-term. For critical proprietary systems, OMSB will always have maintenance contracts or alternate support arrangements to avoid disruptions.
+        </p>
+      </div>
+
+      <!-- 7. Environmental and Social Sustainability -->
+      <div class="integration-card bg-white p-6 rounded-xl shadow-lg">
+        <h4 class="text-xl font-bold integration-title mb-3 flex items-center">
+          <!-- Icon: Leaf (simulated SVG) -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="integration-icon mr-2"><path d="M11 20A7 7 0 0 1 9.8 8.8L16 2l3 3m-9 9l-4 4m6-12l2-2m-2 10l-2 2m2-14l2 2m-2 10l-2 2m2-14l2 2m-2 10l-2 2"/><path d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18z"/></svg>
+          Environmental and Social Sustainability
+        </h4>
+        <p class="text-sm-faithful leading-relaxed text-gray-700">
+          OMSB’s digital move will **reduce paper usage** (supporting environmental goals) and make services more accessible (supporting social inclusion). As Oman places emphasis on sustainability (which Vision 2040 does in terms of socio-economic sustainability), OMSB can highlight that its digital strategy contributes by **reducing carbon footprint** (less travel for in-person tasks, less physical infrastructure via cloud sharing, etc.) and by building a resilient organization that can serve the nation’s needs in the long run. These points can help gather broader support for the initiative as part of Oman’s sustainable development agenda.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Final Summary Section -->
+    <section class="mt-12 py-8 bg-om-gold/10 rounded-xl shadow-md border-l-4 border-om-gold">
+      <h4 class="text-xl font-bold text-om-navy px-6 mb-3">Not a Short-lived Initiative But a Permanent Evolution</h4>
+      <p class="text-lg text-gray-700 leading-relaxed px-6 text-sm-faithful">
+        OMSB’s financial and sustainability planning ensures that the digital transformation is not a short-lived initiative but a permanent evolution of the organization. By carefully managing the budget, seeking efficiencies, and creating avenues for the platform to partly fund itself, OMSB aims to maintain its digital systems and services well beyond 2036. This reduces reliance solely on government funding and provides assurance to internal and external stakeholders that investing in this transformation yields lasting value. The digital strategy essentially becomes an enabler for OMSB to do more with prudent resource use – exemplifying the kind of financial and operational excellence that Oman Vision 2040 encourages in public sector entities. With these plans, OMSB is confident that it can achieve its vision by 2036 and continue to innovate and excel in the decades after, without regression or financial shortfall undermining its achievements.
+      </p>
+    </section>
+  </main>
+ <!-- ===== GLOBAL FOOTER (do not remove) ===== -->
+  <footer class="p-6 text-center text-sm text-gray-500 border-t border-gray-200 bg-gray-50">
+    Digital Transformation Initiative | OMSB | 2026–2035
+  </footer>
+</div>
+</body>
+</html>

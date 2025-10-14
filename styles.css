@@ -1,0 +1,287 @@
+/* ==========================================
+   OMSB — Global Site Styles (styles.css)
+   Safe to drop-in. No HTML changes required
+   ========================================== */
+
+/* Brand variables (kept here so this file works even if a page missed them) */
+:root {
+  --color-primary-navy: #003366;
+  --color-accent-teal:  #006A6A;
+  --color-accent-gold:  #C8A232;
+  --color-text:         #1f2937;
+}
+
+/* ---------- Header nav: wrap on bigger screens, scroll on tiny screens ---------- */
+
+/* Keep horizontal scroll on narrow screens (mobile-first) */
+header nav .hide-scrollbar {
+  overflow-x: auto;
+}
+
+/* On small screens and up (Tailwind sm = 640px): remove scroll & wrap nicely */
+@media (min-width: 640px) {
+  header nav .hide-scrollbar {
+    overflow: visible !important;
+  }
+  header nav ul {
+    display: flex;              /* ensure flex is applied if not already */
+    flex-wrap: wrap;            /* wrap pills onto multiple lines */
+    justify-content: center;    /* center in header */
+    gap: 0.375rem !important;   /* slightly tighter spacing (≈ 1.5) */
+  }
+}
+
+/* Tighter pills so more fit per row, while staying readable */
+header nav a {
+  padding: 0.375rem 0.625rem;   /* ≈ py-1.5 px-2.5 */
+  font-size: 0.8125rem;         /* ≈ 13px */
+  line-height: 1.15;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+  border-radius: 999px;         /* full pill */
+}
+
+/* Slightly roomier on md+ for readability */
+@media (min-width: 768px) {
+  header nav a {
+    padding: 0.4rem 0.75rem;    /* ≈ py-1.5 px-3 */
+    font-size: 0.875rem;        /* 14px (Tailwind text-sm) */
+  }
+}
+
+/* Subtle mobile edge-fades to hint “scroll for more” — match navy header */
+@media (max-width: 639.98px) {
+  header nav .hide-scrollbar {
+    position: relative;
+  }
+  header nav .hide-scrollbar::before,
+  header nav .hide-scrollbar::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 22px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  header nav .hide-scrollbar::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 51, 102, 0.95),
+      rgba(0, 51, 102, 0)
+    );
+  }
+  header nav .hide-scrollbar::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(0, 51, 102, 0.95),
+      rgba(0, 51, 102, 0)
+    );
+  }
+}
+
+/* Improve hover/focus feedback for accessibility (keeps your current colors) */
+header nav a:hover {
+  transform: translateY(-1px);
+}
+header nav a:focus-visible {
+  outline: 2px solid var(--color-accent-gold);
+  outline-offset: 2px;
+}
+
+/* ---------- Gentle typographic polish (optional but consistent across pages) ---------- */
+
+/* Keep page body text consistent */
+body {
+  color: var(--color-text);
+}
+
+/* Unify big section titles you commonly use */
+main h2.section-heading,
+main h2.text-om-navy {
+  letter-spacing: -0.01em;
+}
+
+/* Card hover effect consistency */
+.card-hover {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+/* Info boxes / “summary-card” / “ambition-card” borders (if present) */
+.summary-card { border-top: 5px solid var(--color-accent-teal); }
+.ambition-card { border-top: 5px solid var(--color-accent-gold); }
+
+/* Standardize section title accent (if you use .section-title anywhere) */
+.section-title {
+  border-left: 5px solid var(--color-accent-teal);
+  padding-left: 1rem;
+}
+
+/* Make back/CTA links feel consistent on all pages */
+.footer-cta a,
+.main-cta a {
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.footer-cta a:hover,
+.main-cta a:hover {
+  transform: translateY(-1px);
+}
+
+
+.cms-page h1 { font-size: 2rem; font-weight: 800; color: var(--color-primary-navy); margin: 1rem 0 .75rem; }
+.cms-page h2 { font-size: 1.5rem; font-weight: 700; color: var(--color-primary-navy); margin: 1rem 0 .5rem; }
+.cms-page h3 { font-size: 1.25rem; font-weight: 700; color: var(--color-accent-teal); margin: .75rem 0 .5rem; }
+.cms-page p { color: #374151; line-height: 1.7; margin: .75rem 0; }
+.cms-page ul, .cms-page ol { padding-left: 1.25rem; margin: .75rem 0; }
+.cms-page li { margin: .25rem 0; }
+.cms-page blockquote { border-left: 4px solid rgba(0,0,0,.08); padding-left: .75rem; color: #4b5563; font-style: italic; }
+.cms-page table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.cms-page th, .cms-page td { border: 1px solid #e5e7eb; padding: .5rem .75rem; }
+.cms-page img { max-width: 100%; border-radius: .5rem; }
+
+
+/* Governance page helpers */
+.infographic-section-title { color: var(--color-primary-navy); border-bottom: 4px solid var(--color-accent-gold); padding-bottom: 0.5rem; }
+.hierarchy-box { transition: all 0.3s; border: 1px solid #e5e7eb; border-top: 5px solid var(--color-accent-teal); }
+.hierarchy-box:hover { transform: translateY(-2px); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.compliance-feature { border-left: 5px solid var(--color-accent-gold); padding-left: .75rem; }
+.compliance-card { transition: all 0.3s; }
+.compliance-card:hover { transform: scale(1.02); }
+.teal-icon { stroke: var(--color-accent-teal); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Optional connector line for hierarchy (used once) */
+.hierarchy-connector { position: relative; }
+.hierarchy-connector::after {
+  content: ''; position: absolute; left: 50%; bottom: -1rem; width: 2px; height: 1rem;
+  background-color: var(--color-primary-navy); z-index: 0;
+}
+.hierarchy-level-1 { border-top-color: var(--color-primary-navy); }
+
+
+/* --- OMSB Organogram (governance) --- */
+.org-chart-container {
+  display:flex; flex-direction:column; align-items:center;
+  max-width:1400px; margin:0 auto; padding:2rem 0;
+}
+.org-box {
+  background:#fff; padding:1rem; border-radius:8px;
+  box-shadow:0 4px 6px rgba(0,0,0,.1);
+  margin-bottom:2.5rem; position:relative; text-align:center;
+  transition:all .3s ease; max-width:300px; width:90%;
+  border-top:5px solid var(--color-primary-navy);
+}
+.org-box:hover { transform: translateY(-3px); box-shadow:0 10px 15px rgba(0,0,0,.15); }
+.tier-1 { border-top-color: var(--color-accent-gold); font-size:1.25rem; font-weight:700; }
+.tier-2 { border-top-color: var(--color-primary-navy); }
+
+/* connectors */
+.connect-down::before,
+.sc-to-pm::before,
+.pm-to-dt::before,
+.pm-to-dt-peer-line::before,
+.peer-group::before,
+.peer-group > .org-box::after { background-color: #94a3b8; } /* slate-400 */
+
+.connect-down::before {
+  content:''; position:absolute; bottom:-2.5rem; left:50%; transform:translateX(-50%);
+  width:2px; height:2.5rem; z-index:0;
+}
+
+.peer-group { display:flex; justify-content:center; position:relative; padding-top:1.5rem; }
+.peer-group::before { content:''; position:absolute; top:0; left:5%; right:5%; height:2px; z-index:1; }
+.peer-group > .org-box { margin: -1.5rem .5rem 2.5rem; }
+.peer-group > .org-box::after {
+  content:''; position:absolute; top:-1.5rem; left:50%; transform:translateX(-50%);
+  width:2px; height:1.5rem; z-index:2;
+}
+
+@media (max-width:1024px){
+  .peer-group { flex-wrap:wrap; width:100%; padding-top:0; }
+  .peer-group::before { display:none; }
+  .peer-group > .org-box { width:calc(50% - 1rem); margin:.5rem; margin-bottom:2.5rem; margin-top:0; }
+  .peer-group > .org-box::after { top:auto; bottom:-2.5rem; height:2.5rem; z-index:0; }
+  .peer-group:last-child > .org-box::after { display:none; }
+}
+@media (min-width:1024px){ .peer-group > .org-box { width:calc(33.333% - 1rem); } }
+
+.sc-to-pm::before {
+  content:''; position:absolute; bottom:-2.5rem; left:50%; transform:translateX(-50%);
+  width:2px; height:2.5rem; z-index:0;
+}
+
+.pm-to-dt { position:relative; }
+.pm-to-dt::before {
+  content:''; position:absolute; bottom:-1rem; left:50%; transform:translateX(-50%);
+  width:2px; height:1rem; z-index:0;
+}
+.pm-to-dt-peer-line::before {
+  content:''; position:absolute; top:-2px; left:50%; transform:translateX(-50%);
+  width:100%; height:2px; z-index:1;
+}
+
+@media (max-width:768px){
+  .peer-group-small { flex-direction:column; align-items:center; padding-top:0; }
+  .peer-group-small > .org-box { width:90%; margin:.5rem 0; }
+  .peer-group-small > .org-box::after,
+  .peer-group-small::before { display:none; }
+}
+
+<style>
+  /* Dashed advisory connectors from SC → advisory decision forums */
+  .peer-group.advisory { padding-top: 1.5rem; position: relative; }
+  .peer-group.advisory::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 0; border-top: 2px dashed var(--line-color);
+    z-index: 1;
+  }
+  .peer-group.advisory > .org-box {
+    margin-left: 0.5rem; margin-right: 0.5rem;
+    margin-top: -1.5rem; margin-bottom: 3.5rem;
+    position: relative;
+  }
+  .peer-group.advisory > .org-box::after {
+    content: '';
+    position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%);
+    width: 0; height: 1.5rem; border-left: 2px dashed var(--line-color);
+    z-index: 2;
+  }
+
+  /* Single-box reporting group under SC (keeps the same connector look) */
+  .peer-group.single { padding-top: 1.5rem; position: relative; }
+  .peer-group.single::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px; background-color: var(--line-color);
+    z-index: 1;
+  }
+  .peer-group.single > .org-box {
+    margin-top: -1.5rem; margin-bottom: 3.5rem;
+  }
+  .peer-group.single > .org-box::after {
+    content: '';
+    position: absolute; top: -1.5rem; left: 50%; transform: translateX(-50%);
+    width: 2px; height: 1.5rem; background-color: var(--line-color);
+    z-index: 2;
+  }
+
+  /* Mobile: keep advisory stubs dashed */
+  @media (max-width: 1023px) {
+    .peer-group.advisory::before { display: none; }
+    .peer-group.advisory > .org-box {
+      width: calc(50% - 1rem); margin: 0.5rem; margin-bottom: 3.5rem; margin-top: 0;
+    }
+    .peer-group.advisory > .org-box::after {
+      top: auto; bottom: -3.5rem; height: 3.5rem;
+    }
+    .peer-group.single::before { display: none; }
+    .peer-group.single > .org-box::after {
+      top: auto; bottom: -3.5rem; height: 3.5rem;
+    }
+  }
+</style>
+
